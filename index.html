@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stitch & Zip Calculator</title>
+    <!-- Google Fonts: Press Start 2P for retro/stitched look -->
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="frontend/style.css">
+</head>
+
+<body>
+    <div class="calculator-case">
+        <div class="zipper-container">
+            <div class="zipper-teeth"></div>
+            <div class="zipper-pull"></div>
+        </div>
+
+        <div class="display-container">
+            <div class="display-screen">
+                <div class="previous-operand" data-previous-operand></div>
+                <div class="current-operand" data-current-operand></div>
+            </div>
+        </div>
+
+        <div class="buttons-grid">
+            <button class="btn btn-action" data-all-clear>AC</button>
+            <button class="btn btn-action" data-delete>DEL</button>
+            <button class="btn btn-op" data-operation="%">%</button>
+            <button class="btn btn-op" data-operation="÷">÷</button>
+
+            <button class="btn btn-num" data-number>7</button>
+            <button class="btn btn-num" data-number>8</button>
+            <button class="btn btn-num" data-number>9</button>
+            <button class="btn btn-op" data-operation="*">×</button>
+
+            <button class="btn btn-num" data-number>4</button>
+            <button class="btn btn-num" data-number>5</button>
+            <button class="btn btn-num" data-number>6</button>
+            <button class="btn btn-op" data-operation="-">-</button>
+
+            <button class="btn btn-num" data-number>1</button>
+            <button class="btn btn-num" data-number>2</button>
+            <button class="btn btn-num" data-number>3</button>
+            <button class="btn btn-op" data-operation="+">+</button>
+
+            <button class="btn btn-num span-two" data-number>0</button>
+            <button class="btn btn-num" data-number>.</button>
+            <button class="btn btn-equals" data-equals>=</button>
+        </div>
+    </div>
+
+    <!-- Core Logic -->
+    <script src="core/src/calculator.js"></script>
+    <!-- UI Logic -->
+    <script src="frontend/script.js" defer></script>
+</body>
+
+</html>

@@ -85,4 +85,8 @@ class Calculator {
     }
 }
 
-module.exports = Calculator;
+if (typeof module !== 'undefined' && module.exports) {
+    module.exports = Calculator;
+} else {
+    window.Calculator = Calculator;
+}
